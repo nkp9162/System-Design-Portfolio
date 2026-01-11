@@ -404,12 +404,26 @@ def create_button(self) -> Button:  # Abstract type
 
 ---
 
-## Related Patterns
+## Trade-offs of Factory Patterns
 
-- **Builder Pattern** - Constructs complex objects step by step
-- **Prototype Pattern** - Creates objects by cloning
-- **Singleton Pattern** - Often used with factories to ensure one instance
-- **Strategy Pattern** - Factories can create different strategies
+While Factory patterns improve flexibility and maintainability, they come with certain costs:
+
+- **Increased Complexity**  
+  Factories add extra layers (interfaces and classes) compared to direct object creation.
+
+- **More Boilerplate Code**  
+  Abstract Factory especially introduces multiple product interfaces and concrete factories.
+
+- **Over-engineering Risk**  
+  Using factories for simple or stable object creation can make code unnecessarily complex.
+
+- **Indirect Object Creation**  
+  Debugging can be slightly harder because objects are created indirectly through factories.
+
+- **Factory Method Redundancy in Small Systems**  
+  When variations are minimal, Factory Method may feel like just moving `if-else` logic elsewhere.
+
+These trade-offs are acceptable when flexibility, scalability, and consistency are more important than simplicity.
 
 ---
 

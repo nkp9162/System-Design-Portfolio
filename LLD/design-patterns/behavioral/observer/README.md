@@ -423,12 +423,26 @@ class ConditionalObserver(Observer):
 
 ---
 
-## Related Patterns
+## Trade-offs of Observer Pattern
 
-- **Mediator Pattern** - Similar but with central mediator instead of direct observer-subject relationship
-- **Singleton Pattern** - Often used for event managers in observer systems
-- **Command Pattern** - Can be used to encapsulate observer notifications
-- **State Pattern** - State changes can notify observers
+While the Observer pattern improves decoupling and extensibility, it introduces certain challenges:
+
+- **Hidden Control Flow**  
+  Updates happen implicitly, making it harder to trace which observers are triggered.
+
+- **Debugging Complexity**  
+  When many observers are registered, identifying the source of unexpected behavior becomes difficult.
+
+- **Performance Overhead**  
+  Notifying a large number of observers can impact performance if updates are frequent.
+
+- **Unclear Update Order**  
+  Observers are notified in registration order, which may cause subtle bugs if order matters.
+
+- **Memory Management Risks**  
+  Failing to remove observers can lead to memory leaks or stale updates.
+
+These trade-offs are acceptable when multiple components need to react to changes without tight coupling.
 
 ---
 

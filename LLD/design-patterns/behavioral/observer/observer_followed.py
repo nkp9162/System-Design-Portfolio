@@ -23,10 +23,6 @@ class Observer(ABC):
 
 #  Concrete Subject 
 class WeatherStation(Subject):
-    """
-    Holds weather data and notifies observers
-    Does not know observer implementations
-    """
 
     def __init__(self):
         self._observers = []

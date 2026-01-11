@@ -9,28 +9,77 @@ The goal of this repo is to demonstrate *how and why* design decisions are made 
 ## 📚 Repository Structure
 ```
 system-design-portfolio/
-├── LLD/                    # Low-Level Design (Complete)
-│   ├── design-patterns/   # All 23 Gang of Four patterns
-│   └── lld-practice/      # 12+ LLD problems with solutions
-├── HLD/                    # High-Level Design (Coming Soon)
-└── Projects/               # Real-world implementations (Coming Soon)
+├── LLD/                         # Low-Level Design
+│   ├── SOLID/                   # SOLID Principles (Foundations)
+│   │
+│   ├── design-patterns/         # Gang of Four Design Patterns (23)
+│   │   ├── creational/
+│   │   ├── structural/
+│   │   └── behavioral/
+│   │
+│   └── lld-practice/            # LLD Problems & case studies
+│       ├── parking_lot/
+│       ├── elevator_system/
+│       ├── payment_gateway/
+│       └── ...
+│
+├── HLD/                         # High-Level Design (Planned)
+│   ├── concepts/
+│   ├── case-studies/
+│   └── diagrams/
+│
+└── Projects/                    # End-to-end real-world implementations
+    ├── scalable_services/
+    ├── system_simulations/
+    └── ...
+
 ```
+---
+
+# 🔥 What’s Inside
+
+## 📐 Low-Level Design (LLD)
+**Status:** ✅ Active
+
+The LLD section focuses on building strong software design foundations.  
+It follows a clear progression:
+
+> **Principles → Patterns → Real interview-level problems**
+
+This helps understand not just *how* to design systems, but *why* certain design choices are made.
 
 ---
 
-## 🔥 What's Inside
+## 🧱 SOLID Principles (Foundations)
 
-### 📐 Low-Level Design (LLD)
-**Status:** ✅ Active 
+This section explains **SOLID principles from the ground up**, with a strong focus on **why** and **when** to apply them.
+
+Each principle includes:
+
+- Clear problem statement (what goes wrong without the principle)
+- `*_violated.py` example (bad or rigid design)
+- `*_followed.py` example (refactored, cleaner design)
+- `README.md` covering:
+  - Simple explanation
+  - Trade-offs
+  - When **not** to apply the principle
+  - Interview-oriented insights
+
+**Example:**  
+`SRP/` demonstrates how multiple responsibilities reduce maintainability and how to refactor safely using Single Responsibility Principle.
+
+[➡️ Explore SOLID Principles](LLD/SOLID/)
 
 ### Design Patterns (GoF)
 
-This section covers **all 23 Gang of Four design patterns**, each documented with:
+Each pattern includes:
 - Problem statement (why the pattern is needed)
-- Implementation (with and without the pattern)
+- Implementation **with and without** the pattern
 - UML / class diagrams
 - Trade-offs and limitations
-- When *not* to use the pattern
+- When **not** to use the pattern
+- Relation to SOLID principles (where applicable)
+The goal is to understand patterns as **tools**, not rules.
 
 **Categories covered:**
 

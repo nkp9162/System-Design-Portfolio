@@ -326,11 +326,21 @@ processor.process_payment(100)
 
 ---
 
-## Related Patterns
+## Trade-offs of Strategy Pattern
 
-- **State Pattern** - Similar structure, but strategies represent states
-- **Factory Pattern** - Often used to create strategy objects
-- **Template Method** - Alternative when algorithms share common steps
+While the Strategy pattern improves flexibility and clean separation of algorithms, it has some real costs:
+
+- **Increased Number of Classes**  
+  Each algorithm becomes a separate strategy class, increasing codebase size.
+
+- **Indirect Control Flow**  
+  The actual behavior is delegated to a strategy object, so the execution path is less obvious.
+  > Client → Context → Strategy → Result
+
+- **Over-engineering Risk**  
+  Using Strategy for simple or stable logic adds unnecessary abstraction without clear benefits.
+
+These trade-offs are acceptable when algorithms change frequently or need to be extended independently.
 
 ---
 
