@@ -124,11 +124,3 @@ class EcommerceAppWithIfElse:
             result = self.gateway.initiate_transaction(
                 amount, currency, customer_email, "Purchase"
             )
-
-
-print("Problems with this approach:")
-print("Violates Open/Closed Principle")
-print("Application knows all gateway implementations")
-print("Must modify app for each new gateway")
-print("Tight coupling")
-print("Hard to test and maintain")
