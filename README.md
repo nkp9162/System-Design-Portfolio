@@ -70,7 +70,7 @@ Each principle includes:
 
 [➡️ Explore SOLID Principles](LLD/SOLID/)
 
-### Design Patterns (GoF)
+### 🧩 Design Patterns (GoF)
 
 Each pattern includes:
 - Problem statement (why the pattern is needed)
