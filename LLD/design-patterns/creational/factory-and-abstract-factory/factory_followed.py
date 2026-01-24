@@ -80,10 +80,6 @@ class LinuxCheckbox(Checkbox):
 
 #  Abstract Factory 
 class GUIFactory(ABC):
-    """
-    Factory interface that defines methods
-    for creating related UI components
-    """
 
     @abstractmethod
     def create_button(self) -> Button:

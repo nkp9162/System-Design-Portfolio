@@ -177,14 +177,6 @@ End-to-end projects demonstrating:
 - Clean Code & Maintainable Architecture
 - Trade-off & scalability thinking
 
-## 📖 How to Navigate
-
-Each design or project typically contains:
-- `README.md` → High-level overview
-- `DESIGN.md` → Detailed design decisions & trade-offs
-- `diagrams/` → UML and architecture diagrams
-- `src/` → Clean, runnable code
-
 ---
 
 ## 🚀 Quick Start
