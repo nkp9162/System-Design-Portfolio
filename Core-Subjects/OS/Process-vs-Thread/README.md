@@ -4,7 +4,7 @@
 1. [Introduction](#introduction)
 2. [What is a Process?](#what-is-a-process)
 3. [What is a Thread?](#what-is-a-thread)
-4. [File Descriptors (FD)](#file-descriptors)
+4. [File Descriptors (FD)](#-file-descriptors-fd)
 5. [Process vs Thread - Key Differences](#process-vs-thread---key-differences)
 6. [Real-World Examples](#real-world-examples)
 7. [Internal Working & Memory](#internal-working--memory)
